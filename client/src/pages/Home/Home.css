@@ -1,0 +1,58 @@
+.home{
+  height: 1000px;
+}
+
+.heroGameList{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2%;
+}
+
+.heroGameList li{
+  display: flex;
+  justify-content: center;
+}
+
+.gameInfo{
+  color: black;
+  text-decoration: none;
+  width: 50%;
+}
+
+.title{
+  grid-area: title;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.rating{
+  grid-area: rating;
+}
+
+.content{
+  grid-area: content;
+}
+
+.reviewNumber{
+  grid-area: reviewNumber;
+}
+
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "title   title   title   title   title   rating"
+  "content content content content content content"
+  ".       .       .       .       .       reviewNumber";
+  width: 100%;
+  min-height: 150px;
+  border-left: 1px solid grey;
+  margin-top: 5px;
+}
+
+.card:hover{
+  background-color: lightgrey;
+}

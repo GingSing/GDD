@@ -1,0 +1,17 @@
+.signIn{
+  height: 26px;
+}
+.signInBtn{
+  border: none;
+  background-color: white;
+}
+
+.signInOverlay{
+  background-color: white;
+  padding: 5% 8% 3% 8%;
+}
+
+.signInOverlay input{
+  display: block;
+  margin-top: 15px;
+}
